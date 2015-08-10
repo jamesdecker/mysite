@@ -1,8 +1,7 @@
 /*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
+Project Name: Final Project
+Client: James Decker LLC
+Author: James Decker
 */
 
 
@@ -45,27 +44,21 @@ Developer @GA in NYC
 /* BASE STYLES
 /*******************************************/
 
-body {
-  color: #000;
-  font-size: 12px;
-  line-height: 1.4;
-  font-family: font-family: 'Open Sans', sans-serif;
-  background: url(../images/cloudy.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
 h1 {
-
-
+font-family: "Open Sans";
+font-weight:800;
+font-size: 30px;
+color:white;
+margin-left: 50px;
 }
 
 h2 {
-
-
+font-family: "Open Sans";
+font-weight: 100;
+font-size: 21px;
+color:black;
+margin-left: 40px;
+line-height: 140%;
 }
 
 /******************************************
@@ -73,84 +66,103 @@ h2 {
 /*******************************************/
 
 /* Center the container */
+
+body {
+    margin:0px;
+    background: url(../images/mochaGrunge_@2X.png);
+}
+
+.pfooter {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.header-cont {
+  width:100%;
+  position:fixed;
+  top:0px;
+}
+
+.header {
+  height:80px;
+  background:#000;
+  width:960px;
+  margin:0px auto;
+}
+
+.header-name {
+  background:#000;
+  width:450px;
+  margin:30px 0 10px 0;
+  float: left;
+}
+
 .container {
-	width: 960px;
-	margin: auto;
-  padding-top: 5em;
+  width:960px;
+  background: lightgray;
+  height: 1270px;
+  margin: 0px auto;
+  padding-top:100px;
 }
 
-.result {
-	width: 100px;
-	margin: auto;
-  padding-top: 5em;
-  float: right;
+img {
+    float: left;
+    margin: 0px 30px 10px 10px;
 }
 
-header {
-  background: rgba(0,0,0, .5);
-  padding: 20px 0;
+.content {
+  margin: 10px 50px 50px 0px;
 }
 
-.title {
-  text-align: center;
-  color: #fff;
-  font-size: 38px;
-  font-weight: bold;
-  font-family: helvetica, arial, sans-serif;
+.projectone {
+  width: 960px;
+  background: #B2B2B2;
+  height: 100px;
+  margin:0px auto;
+  float: clearfix;
 }
 
-.title p {
-  font-size: 22px;
-  font-weight: normal
+.projecttwo {
+  width: 960px;
+  background: #999999;
+  height: 100px;
+  margin:0px auto;
+  float: clearfix;
 }
 
-/*#tempature {
-  color: #6b6b6c;
-  font-size: 38px;
-  background: #fff;
-  border: 1px solid #111;
-  padding: 0px 30px;
-  display: inline-block;
-  width: 480px;
-  margin-right: 24px;
-  font-family: helvetica, arial, sans-serif;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-}*/
-/*#submit-btn {
-  background: #ffe500;
-  color: #000;
-  font-size: 38px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 1px solid #111;
-  text-align: center;
-  display: inline-block;
-  width: 300px;
-  height: 72px;
-  line-height: 74px;
-  vertical-align: middle;
-  font-family: helvetica, arial, sans-serif;
-  cursor: pointer;*/
+.projectthree {
+  width: 960px;
+  background: #808080;
+  height: 100px;
+  margin:0px auto;
+  float: clearfix;
 }
-/*#submit-btn:hover {
-  background: #fff600;
-}*/
 
-/* these could all be projects
-
-.rainy {
-  background-image: url(../images/rainy.jpg)
+.projectfour {
+  width: 960px;
+  background: #666666;
+  height: 100px;
+  margin:0px auto;
+  float: clearfix;
 }
-.cloudy {
-  background-image: url(../images/cloudy.jpg)
+
+.projectfive {
+  width: 960px;
+  background: #4D4D4D;
+  height: 100px;
+  margin:0px auto;
+  float: clearfix;
 }
-.sunny {
-  background-image: url(../images/sunny.jpg)
-}*/
 
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.footer {
+  height:80px;
+  background:#000;
+  width:960px;
+  margin:0px auto;
+  bottom: 0px;
+}
