@@ -61,6 +61,34 @@ margin-left: 40px;
 line-height: 140%;
 }
 
+.pfooter {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.pbody {
+  color: black;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  margin-right: 40px;
+
+}
+
+.accordion-section-content a {
+  color: #e60000;
+  text-decoration: none;
+}
+
+.accordion-section-content a:hover {
+  text-decoration: underline;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -104,7 +132,7 @@ body {
 .container {
   width:960px;
   background: lightgray;
-  height: 1270px;
+  height: auto;
   margin: 0px auto;
   padding-top:100px;
 }
@@ -118,46 +146,49 @@ img {
   margin: 10px 50px 50px 0px;
 }
 
-.projectone {
-  width: 960px;
-  background: #B2B2B2;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
 }
 
-.projecttwo {
-  width: 960px;
-  background: #999999;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:25px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+
+    /* Type */
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+    padding-left: 40px;
+    text-decoration:none;
 }
 
-.projectthree {
-  width: 960px;
-  background: #808080;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#e60000;
+    /* Type */
+    text-decoration:none;
 }
 
-.projectfour {
-  width: 960px;
-  background: #666666;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
 }
 
-.projectfive {
-  width: 960px;
-  background: #4D4D4D;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
-}
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
 
+}
 
 .footer {
   height:80px;
