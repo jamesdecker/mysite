@@ -47,7 +47,7 @@ Author: James Decker
 h1 {
 font-family: "Open Sans";
 font-weight:800;
-font-size: 30px;
+font-size: 2.4rem;
 color:white;
 margin-left: 50px;
 }
@@ -55,7 +55,7 @@ margin-left: 50px;
 h2 {
 font-family: "Open Sans";
 font-weight: 100;
-font-size: 21px;
+font-size: 1.2rem;
 color:black;
 margin-left: 40px;
 line-height: 140%;
@@ -65,7 +65,7 @@ line-height: 140%;
   color: white;
   font-family: "Open Sans";
   font-weight: 200;
-  font-size: 18px;
+  font-size: .8rem;
   text-align: center;
   padding-top: 30px;
 }
@@ -74,7 +74,7 @@ line-height: 140%;
   color: black;
   font-family: "Open Sans";
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 130%;
   margin-right: 40px;
 
@@ -97,8 +97,10 @@ line-height: 140%;
 
 body {
     margin:0px;
-    background: url(../images/mochaGrunge_@2X.png);
+    background-color: black;
 }
+
+/*url(../images/mochaGrunge_@2X.png);*/
 
 .pfooter {
   color: white;
@@ -116,21 +118,21 @@ body {
 }
 
 .header {
-  height:80px;
+  height:100px;
   background:#000;
-  width:960px;
+  width:100%;
   margin:0px auto;
 }
 
 .header-name {
   background:#000;
-  width:450px;
+  width:100%;
   margin:30px 0 10px 0;
   float: left;
 }
 
 .container {
-  width:960px;
+  width:100%;
   background: lightgray;
   height: auto;
   margin: 0px auto;
@@ -139,7 +141,8 @@ body {
 
 img {
     float: left;
-    margin: 0px 30px 10px 10px;
+    margin: 0px 20px 10px 10px;
+    max-width: 100%;
 }
 
 .content {
@@ -185,7 +188,7 @@ img {
 
 /*----- Section Content -----*/
 .accordion-section-content {
-    padding:15px;
+    padding:30px;
     display:none;
 
 }
@@ -193,7 +196,20 @@ img {
 .footer {
   height:80px;
   background:#000;
-  width:960px;
+  width:100%;
   margin:0px auto;
   bottom: 0px;
+}
+
+@media (max-width: 768px) {
+
+h1 {
+font-size: 1.5rem;
+}
+
+.header {
+  height:80px;
+}
+
+
 }
