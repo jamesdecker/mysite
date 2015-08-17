@@ -47,7 +47,7 @@ Author: James Decker
 h1 {
 font-family: "Open Sans";
 font-weight:800;
-font-size: 2.4rem;
+font-size: 2.5rem;
 color:white;
 margin-left: 50px;
 }
@@ -80,14 +80,6 @@ line-height: 140%;
 
 }
 
-.accordion-section-content a {
-  color: #e60000;
-  text-decoration: none;
-}
-
-.accordion-section-content a:hover {
-  text-decoration: underline;
-}
 
 /******************************************
 /* LAYOUT
@@ -100,7 +92,13 @@ body {
     background-color: black;
 }
 
-/*url(../images/mochaGrunge_@2X.png);*/
+nav {
+  float: right;
+  margin: 28px 10px 0 0;
+}
+nav ul li {
+  display: inline-block;
+}
 
 .pfooter {
   color: white;
@@ -126,8 +124,8 @@ body {
 
 .header-name {
   background:#000;
-  width:100%;
-  margin:30px 0 10px 0;
+  width:80%;
+  margin:30px 0 0 0;
   float: left;
 }
 
@@ -141,9 +139,14 @@ body {
 
 img {
     float: left;
-    margin: 0px 20px 10px 10px;
+    margin: 0px 20px 10px 0px;
     max-width: 100%;
 }
+
+.icon {
+  margin: 5px 10px 0px 0px;
+}
+
 
 .content {
   margin: 10px 50px 50px 0px;
@@ -156,6 +159,16 @@ img {
     border-radius:3px;
     background:#f7f7f7;
 }
+
+.accordion-section-content a {
+  color: #e60000;
+  text-decoration: none;
+}
+
+.accordion-section-content a:hover {
+  text-decoration: underline;
+}
+
 
 /*----- Section Titles -----*/
 .accordion-section-title {
@@ -204,12 +217,36 @@ img {
 @media (max-width: 768px) {
 
 h1 {
-font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .header {
   height:80px;
 }
+
+nav ul li {
+  display: inline-block;
+
+}
+
+ nav {
+   float: right;
+   margin: 12px 10px 0 0;
+ }
+
+.icon {
+  margin: 10px 10px 0px 0px;
+
+}
+
+.header-name {
+  background:#000;
+  width:60%;
+  margin:15px 0 0 0;
+  float: left;
+}
+
+
 
 
 }
