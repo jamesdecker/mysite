@@ -44,32 +44,6 @@ Author: James Decker
 /* BASE STYLES
 /*******************************************/
 
-h1 {
-font-family: "Open Sans";
-font-weight:800;
-font-size: 2.5rem;
-color:white;
-margin-left: 50px;
-}
-
-h2 {
-font-family: "Open Sans";
-font-weight: 100;
-font-size: 1.2rem;
-color:black;
-margin-left: 40px;
-line-height: 140%;
-}
-
-.pfooter {
-  color: white;
-  font-family: "Open Sans";
-  font-weight: 200;
-  font-size: .8rem;
-  text-align: center;
-  padding-top: 30px;
-}
-
 .pbody {
   color: black;
   font-family: "Open Sans";
@@ -77,15 +51,46 @@ line-height: 140%;
   font-size: 1.2rem;
   line-height: 130%;
   margin-right: 40px;
+}
 
+.pbody a {
+  color: red;
 }
 
 
-/******************************************
-/* LAYOUT
-/*******************************************/
+h1 {
+  font-family: "Open Sans";
+  font-weight:800;
+  font-size: 2.5rem;
+  color:white;
+  margin-left: 50px;
+}
 
-/* Center the container */
+h2 {
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: 1.2rem;
+  color:black;
+  margin-left: 40px;
+  line-height: 140%;
+}
+
+.pfooter {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 200;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer {
+  height:80px;
+  background:#000;
+  width:100%;
+  margin:0px auto;
+  bottom: 0px;
+}
 
 body {
     margin:0px;
@@ -95,19 +100,23 @@ body {
 nav {
   float: right;
   margin: 28px 10px 0 0;
+
 }
+
 nav ul li {
   display: inline-block;
 }
 
-.pfooter {
-  color: white;
-  font-family: "Open Sans";
-  font-weight: 200;
-  font-size: 18px;
-  text-align: center;
-  padding-top: 30px;
+img {
+    float: left;
+    margin: 0px 20px 10px 0px;
+    max-width: 100%;
 }
+
+
+/******************************************
+/* LAYOUT
+/******************************************/
 
 .header-cont {
   width:100%;
@@ -137,12 +146,6 @@ nav ul li {
   padding-top:100px;
 }
 
-img {
-    float: left;
-    margin: 0px 20px 10px 0px;
-    max-width: 100%;
-}
-
 .icon {
   margin: 5px 10px 0px 0px;
 }
@@ -168,7 +171,6 @@ img {
     background:#333;
     transition:all linear 0.15s;
 
-    /* Type */
     font-family: "Open Sans";
     font-weight: 600;
     font-size:1.200em;
@@ -193,22 +195,10 @@ img {
 
 }
 
-.footer {
-  height:80px;
-  background:#000;
-  width:100%;
-  margin:0px auto;
-  bottom: 0px;
-}
-
 @media (max-width: 768px) {
 
 h1 {
   font-size: 1.5rem;
-}
-
-.header {
-  height:80px;
 }
 
 nav ul li {
@@ -219,7 +209,11 @@ nav ul li {
  nav {
    float: right;
    margin: 12px 10px 0 0;
- }
+}
+
+.header {
+  height:80px;
+}
 
 .icon {
   margin: 10px 10px 0px 0px;
