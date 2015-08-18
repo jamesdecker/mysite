@@ -1,26 +1,27 @@
 jQuery(document).ready(function() {
 	function close_accordion_section() {
-		jQuery('.accordion .accordion-section-title').removeClass('active');
-		jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+		$('.accordion .accordion-section-title').removeClass('active');
+		$('.accordion .accordion-section-content').slideUp(300).removeClass('open');
 	}
 
-	jQuery('.accordion-section-title').click(function(e) {
+		$('.accordion-section-title').click(function(event) {
 		event.preventDefault();
-    // Grabs current anchor value
-		var currentAttrValue = jQuery(this).attr('href');
 
-		if(jQuery(e.target).is('.active')) {
+		// Grabs current anchor value
+		var currentAttrValue = $(this).attr('href');
+
+		if($(event.target).is('.active')) {
 			close_accordion_section();
 		}else {
 			close_accordion_section();
 
 			// Adds active class to section title
-			jQuery(this).addClass('active');
+			$(this).addClass('active');
 
 			// Open up the hidden content panel
-			jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+			$('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
 		}
-	
+
 	});
 });
 

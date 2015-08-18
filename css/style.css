@@ -156,19 +156,8 @@ img {
 .accordion {
     overflow:hidden;
     box-shadow:0px 1px 3px rgba(0,0,0,0.25);
-    border-radius:3px;
     background:#f7f7f7;
 }
-
-.accordion-section-content a {
-  color: #e60000;
-  text-decoration: none;
-}
-
-.accordion-section-content a:hover {
-  text-decoration: underline;
-}
-
 
 /*----- Section Titles -----*/
 .accordion-section-title {
@@ -191,8 +180,6 @@ img {
 
 .accordion-section-title.active, .accordion-section-title:hover {
     background:#e60000;
-    /* Type */
-    text-decoration:none;
 }
 
 .accordion-section:last-child .accordion-section-title {
@@ -245,8 +232,5 @@ nav ul li {
   margin:15px 0 0 0;
   float: left;
 }
-
-
-
 
 }
