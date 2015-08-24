@@ -46,7 +46,7 @@ Author: James Decker
 
 .pbody {
   color: black;
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 130%;
@@ -57,9 +57,8 @@ Author: James Decker
   color: red;
 }
 
-
 h1 {
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-weight:800;
   font-size: 2.5rem;
   color:white;
@@ -67,7 +66,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-weight: 100;
   font-size: 1.2rem;
   color:black;
@@ -78,8 +77,8 @@ h2 {
 .pfooter {
   color: white;
   font-family: "Open Sans";
-  font-weight: 200;
-  font-size: 1rem;
+  font-weight: 300;
+  font-size: 1.2rem;
   text-align: center;
   padding-top: 30px;
 }
@@ -94,7 +93,7 @@ h2 {
 
 body {
     margin:0px;
-    background-color: black;
+    background: black;
 }
 
 nav {
@@ -124,7 +123,7 @@ img {
   top:0px;
 }
 
-.header {
+.header-main {
   height:100px;
   background:#000;
   width:100%;
@@ -133,7 +132,7 @@ img {
 
 .header-name {
   background:#000;
-  width:80%;
+  width:75%;
   margin:30px 0 0 0;
   float: left;
 }
@@ -141,20 +140,31 @@ img {
 .container {
   width:100%;
   background: lightgray;
-  height: auto;
-  margin: 0px auto;
   padding-top:100px;
+
+  /*background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+
 }
 
 .icon {
   margin: 5px 10px 0px 0px;
 }
 
-
 .content {
   margin: 10px 50px 50px 0px;
+
 }
 
+.bodydiv {
+  float: right;
+  margin-left: 625px;
+}
+
+/*----- Accordions-----*/
 
 .accordion {
     overflow:hidden;
@@ -162,7 +172,6 @@ img {
     background:#f7f7f7;
 }
 
-/*----- Section Titles -----*/
 .accordion-section-title {
     width:100%;
     padding:25px;
@@ -195,10 +204,45 @@ img {
 
 }
 
+/*----- Slideshow -----*/
+
+#slideshow {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshowOne {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+#slideshowOne > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+
 @media (max-width: 768px) {
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 nav ul li {
@@ -216,15 +260,28 @@ nav ul li {
 }
 
 .icon {
-  margin: 10px 10px 0px 0px;
+  margin: 20px 10px 0px 0px;
 
 }
 
 .header-name {
   background:#000;
-  width:60%;
-  margin:15px 0 0 0;
+  width:70%;
+  margin:25px 0 0 0;
   float: left;
 }
 
+.pbody {
+  margin-right: 10px;
 }
+
+.bodydiv {
+  float: none;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+}
+
+  /*height: auto;
+  margin: 0px auto;*/
