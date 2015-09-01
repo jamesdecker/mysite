@@ -44,42 +44,96 @@ Author: James Decker
 /* BASE STYLES
 /*******************************************/
 
+.pbody {
+  color: black;
+  font-family: "Open Sans" sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 130%;
+  margin-right: 40px;
+
+}
+
+.pbody a {
+  color: red;
+}
+
 h1 {
-font-family: "Open Sans";
-font-weight:800;
-font-size: 30px;
-color:white;
-margin-left: 50px;
+  font-family: "Open Sans" sans-serif;
+  font-weight:800;
+  font-size: 2.5rem;
+  color:white;
+  margin-left: 50px;
 }
 
 h2 {
-font-family: "Open Sans";
-font-weight: 100;
-font-size: 21px;
-color:black;
-margin-left: 40px;
-line-height: 140%;
+  font-family: "Open Sans" sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color:black;
+  margin-left: 40px;
+  line-height: 140%;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/* Center the container */
-
-body {
-    margin:0px;
-    background: url(../images/mochaGrunge_@2X.png);
+b {
+  font-family: "Open Sans" sans-serif;
+  font-weight: 600;
 }
 
 .pfooter {
-  color: white;
+  color: black;
   font-family: "Open Sans";
-  font-weight: 200;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 1.2rem;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
+
+.footer {
+  height:80px;
+  background:darkgray;
+  width:100%;
+  margin:0px auto;
+  bottom: 15px;
+}
+
+.player {
+  text-align: center;
+  position: relative;
+  margin:20px 5px 5px 0px;
+  display: inline-flex
+}
+
+
+
+body {
+    margin:0px;
+    background: darkgray;
+}
+
+nav {
+  float: right;
+  margin: 28px 10px 0 0;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+img {
+    float: left;
+    margin: 0px 20px 10px 0px;
+    max-width: 100%;
+}
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/******************************************/
 
 .header-cont {
   width:100%;
@@ -87,82 +141,253 @@ body {
   top:0px;
 }
 
-.header {
-  height:80px;
+.header-main {
+  height:100px;
   background:#000;
-  width:960px;
+  width:100%;
   margin:0px auto;
+  /*opacity: 0.6;*/
 }
 
 .header-name {
   background:#000;
-  width:450px;
-  margin:30px 0 10px 0;
+  width:75%;
+  margin:30px 0 0 0;
   float: left;
 }
 
 .container {
-  width:960px;
-  background: lightgray;
-  height: 1270px;
-  margin: 0px auto;
+  width:100%;
+  background:  url(../images/skybg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top:100px;
+  height: auto;
+  margin: 0px auto;
 }
 
-img {
-    float: left;
-    margin: 0px 30px 10px 10px;
+.icon {
+  margin: 5px 15px 0px 0px;
 }
+
+.icon:hover {
+   opacity: .7;
+ }
 
 .content {
   margin: 10px 50px 50px 0px;
 }
 
-.projectone {
-  width: 960px;
-  background: #B2B2B2;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+.bodydiv {
+  float: right;
+  margin-left: 615px;
 }
 
-.projecttwo {
-  width: 960px;
-  background: #999999;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
-}
-
-.projectthree {
-  width: 960px;
-  background: #808080;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
-}
-
-.projectfour {
-  width: 960px;
-  background: #666666;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
-}
-
-.projectfive {
-  width: 960px;
-  background: #4D4D4D;
-  height: 100px;
-  margin:0px auto;
-  float: clearfix;
+.larry {
+  float: none;
+  width: 490px;
+  height: 600px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 
-.footer {
+/*----- Accordions-----*/
+
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    background:#f7f7f7;
+}
+
+.accordion-section-title {
+    width:100%;
+    padding:25px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+    padding-left: 40px;
+    text-decoration:none;
+}
+
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#e60000;
+}
+
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:30px;
+    display:none;
+
+}
+
+/*----- Slideshow -----*/
+
+#slideshowPC {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+}
+
+#slideshowPC > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshowPC_alt {
+    position: relative;
+    width: 320px;
+    height: 390px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+    display: none;
+}
+
+
+#slideshowHRC {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+}
+
+#slideshowHRC > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshowHRC_alt {
+    position: relative;
+    width: 320px;
+    height: 390px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /*box-shadow: 0 0 20px rgba(0,0,0,0.4);*/
+    display: none;
+}
+
+
+
+
+/*#audioplayer{
+	width: 480px;
+	height: 60px;
+	margin: 50px auto auto auto;
+border: solid;
+}
+
+#pButton{
+    height:60px;
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+}
+
+.play{background: url('http://www.alexkatz.me/codepen/images/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/images/pause.png') ;}
+
+#timeline{
+	width: 400px;
+	height: 20px;
+	margin-top: 20px;
+	float: left;
+	border-radius: 15px;
+	background: rgba(0,0,0,.3);
+
+}
+#playhead{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	margin-top: 1px;
+	background: rgba(0, 0, 0,1);
+
+}*/
+
+
+
+@media (max-width: 768px) {
+
+h1 {
+  font-size: 1.6rem;
+}
+
+nav ul li {
+  display: inline-block;
+
+}
+
+ nav {
+   float: right;
+   margin: 12px 10px 0 0;
+}
+
+.header {
   height:80px;
+}
+
+.icon {
+  margin: 25px 12px 0px 0px;
+  width: 70%;
+}
+
+.header-name {
   background:#000;
-  width:960px;
-  margin:0px auto;
-  bottom: 0px;
+  width:70%;
+  margin:25px 0 0 0;
+  float: left;
+}
+
+.pbody {
+  margin-right: 10px;
+}
+
+.bodydiv {
+  float: none;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+
+#slideshowHRC {
+  display: none;
+}
+
+#slideshowHRC_alt {
+  display: block;
+}
+
+#slideshowPC {
+  display: none;
+}
+
+#slideshowPC_alt {
+  display: block;
+}
+
+
 }
